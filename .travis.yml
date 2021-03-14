@@ -17,7 +17,7 @@ script:
 deploy:
    - provider: pages
      skip_cleanup: true # Prevent travis from cleaning out the branch before the deploy occurs
-     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+     github_token: $GITHUB_TOKEN_TEST # Set in travis-ci.org dashboard
      on:
          branch: master # Build only from master
      local_dir: ./dist/ #
