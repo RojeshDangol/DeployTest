@@ -50,7 +50,6 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "baseHref": "https://rojeshdangol.github.io/DeployTest/",
               "budgets": [
                 {
                   "type": "initial",
