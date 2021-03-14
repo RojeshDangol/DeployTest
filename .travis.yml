@@ -20,10 +20,11 @@ deploy:
      github_token: $GITHUB_TOKEN_TEST # Set in travis-ci.org dashboard
      on:
          branch: master # Build only from master
-     local_dir: ./dist/ #
+     local_dir: ./dist/deploy/ #
    - provider: azure_web_apps
      username: myappdeploy\$myappdeploy
      password: ijxjwiMBXlLodJcskNDxAdpbLnSoKXWP1hJ1Dxa9ky8fLj38kqHlLeiMua34
      site: https://myappdeploy.azurewebsites.net
      on:
          branch: master
+     local_dir: ./dist/deploy/
