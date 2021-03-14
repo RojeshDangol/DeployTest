@@ -12,6 +12,7 @@ cache:
    - node_modules
  
 script:
+   - npm install
    - npm run build --prod # Generates the dist folder with built angular app
  
 deploy:
@@ -27,4 +28,3 @@ deploy:
      site: https://myappdeploy.azurewebsites.net
      on:
          branch: master
-     local_dir: ./dist/deploy/
